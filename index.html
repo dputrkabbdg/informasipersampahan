@@ -29,7 +29,7 @@ body{
 /* ================= NAVBAR ================= */
 .navbar{
   background:white;
-  padding:12px 28px;
+  padding:12px 20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -42,143 +42,142 @@ body{
 .nav-left{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:10px;
 }
 
 .logo{
-  width:38px;
-  height:38px;
+  width:34px;
+  height:34px;
   background:var(--main);
   border-radius:8px;
 }
 
 .title{
   font-weight:700;
-  font-size:18px;
+  font-size:16px;
 }
 
+/* MENU DESKTOP */
 .nav-menu{
   display:flex;
-  gap:22px;
+  gap:18px;
   align-items:center;
 }
 
 .nav-menu a{
   text-decoration:none;
   color:var(--text);
-  font-size:14px;
+  font-size:13px;
   font-weight:600;
-  transition:0.2s;
 }
 
 .nav-menu a:hover{
   color:var(--main);
 }
 
-/* dropdown */
-.dropdown{
-  position:relative;
-}
-
-.dropdown-content{
+/* HAMBURGER */
+.menu-toggle{
   display:none;
-  position:absolute;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu{
+  display:none;
+  flex-direction:column;
   background:white;
-  top:30px;
-  right:0;
-  min-width:220px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.15);
-  border-radius:10px;
-  overflow:hidden;
+  padding:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
-.dropdown-content a{
-  display:block;
-  padding:10px 14px;
-  font-size:13px;
+.mobile-menu a{
+  padding:10px;
   border-bottom:1px solid #eee;
-}
-
-.dropdown-content a:hover{
-  background:#f2f7f7;
-}
-
-.dropdown:hover .dropdown-content{
-  display:block;
+  text-decoration:none;
+  color:var(--text);
+  font-size:14px;
 }
 
 /* ================= HERO ================= */
 .hero{
   text-align:center;
-  padding:60px 20px 40px;
+  padding:40px 15px;
 }
 
 .hero h1{
-  font-size:42px;
-  letter-spacing:2px;
-  font-weight:300;
+  font-size:32px;
+  letter-spacing:1px;
+  font-weight:400;
 }
 
 /* ================= CONTENT ================= */
 .container{
   max-width:900px;
-  margin:0 auto;
-  padding:20px;
+  margin:auto;
+  padding:15px;
 }
 
 .link-list{
   display:flex;
   flex-direction:column;
-  gap:26px;
+  gap:16px;
 }
 
 .link-item{
   background:white;
-  padding:18px 22px;
-  border-radius:14px;
-  box-shadow:0 6px 20px rgba(31,99,102,0.08);
-  border-left:6px solid var(--main);
-  transition:0.25s;
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 6px 16px rgba(31,99,102,0.08);
+  border-left:5px solid var(--main);
+  transition:0.2s;
 }
 
 .link-item a{
   text-decoration:none;
-  font-size:16px;
+  font-size:14px;
   color:var(--main);
   font-weight:600;
 }
 
 .link-item:hover{
-  transform:translateY(-4px);
-  box-shadow:0 10px 30px rgba(31,99,102,0.15);
+  transform:translateY(-2px);
 }
 
 /* ================= FOOTER ================= */
 .footer{
-  margin-top:60px;
+  margin-top:40px;
   text-align:center;
-  padding:20px;
-  font-size:12px;
+  padding:15px;
+  font-size:11px;
   color:#777;
 }
 
 /* ================= RESPONSIVE ================= */
 @media(max-width:768px){
+
   .nav-menu{
     display:none;
   }
 
+  .menu-toggle{
+    display:block;
+  }
+
   .hero h1{
-    font-size:28px;
+    font-size:24px;
+  }
+
+  .title{
+    font-size:14px;
   }
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- NAVBAR -->
 <div class="navbar">
   <div class="nav-left">
     <div class="logo"></div>
@@ -187,50 +186,65 @@ body{
 
   <div class="nav-menu">
     <a href="#">Beranda</a>
-    <a href="https://script.google.com/macros/s/AKfycby-jMq9B_mAzvEOhrzGEQ98O5-P8Icl86QvEA_QTHhqTJTu5CzOCzyYeg-X5bJNe_4KbQ/exec">Peta TPS3R Kabupaten Bandung</a>
+    <a href="https://script.google.com/macros/s/AKfycby-jMq9B_mAzvEOhrzGEQ98O5-P8Icl86QvEA_QTHhqTJTu5CzOCzyYeg-X5bJNe_4KbQ/exec">Peta TPS3R</a>
     <a href="https://script.google.com/macros/s/AKfycbyde-lwgOexdxuInwWAR5QDsZ5zVA3kAFSRkfwnmcFGrhaVLFWIJCeeDAMsIBNj4mxGBA/exec">Berita</a>
-    <a href="https://script.google.com/macros/s/AKfycbxYuyJpfPM418SdBJL2ontbRrC9O1iCLwSiM6TzXultiM04JdVLZZa2_fRdw9GkTN1T/exec">TPS3R DPUTR</a>
-    <a href="https://script.google.com/macros/s/AKfycbwEZq-VqtU8QD2WXcvXpqjlrQQi-eARyP-EWBC5udzhUME_iF5w9k5mBiCs7httBNF4/exec">PETA TPS3R DAN DAPUR SPPG</a>
-    <a href="https://script.google.com/macros/s/AKfycbxBPDF8-Jpo5KGrbP_HCBWnqo9qrQ_x9lEdKQ7kIAIH0jcie216oULaaemw7BIizJ0A7Q/exec">Timbulan Sampah TPS3R</a>
-    <a href="https://www.google.com/maps/d/viewer?mid=1lSyz4Zlpy-x0nC0d2U1EjHPVwMSt-8I&femb=1&ll=-7.06853470578671%2C107.59290800000001&z=11">Peta Timbulan Sampah Liar</a>
-    <a href="https://drive.google.com/drive/folders/1uvP9mJCiNvl0Qj2uuyGKkGyRRRl1O0bp?usp=drive_link">Data Monev TPS3R 2026</a>
-
-    </div>
+    <a href="https://script.google.com/macros/s/AKfycbxYuyJpfPM418SdBJL2ontbRrC9O1iCLwSiM6TzXultiM04JdVLZZa2_fRdw9GkTN1T/exec">TPS3R</a>
   </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </div>
 
-<!-- ================= HERO ================= -->
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#">Beranda</a>
+  <a href="https://script.google.com/macros/s/AKfycby-jMq9B_mAzvEOhrzGEQ98O5-P8Icl86QvEA_QTHhqTJTu5CzOCzyYeg-X5bJNe_4KbQ/exec">Peta TPS3R Kabupaten Bandung</a>
+  <a href="https://script.google.com/macros/s/AKfycbyde-lwgOexdxuInwWAR5QDsZ5zVA3kAFSRkfwnmcFGrhaVLFWIJCeeDAMsIBNj4mxGBA/exec">Berita</a>
+  <a href="https://script.google.com/macros/s/AKfycbxYuyJpfPM418SdBJL2ontbRrC9O1iCLwSiM6TzXultiM04JdVLZZa2_fRdw9GkTN1T/exec">TPS3R DPUTR</a>
+  <a href="https://script.google.com/macros/s/AKfycbwEZq-VqtU8QD2WXcvXpqjlrQQi-eARyP-EWBC5udzhUME_iF5w9k5mBiCs7httBNF4/exec">PETA TPS3R DAN DAPUR SPPG</a>
+  <a href="https://script.google.com/macros/s/AKfycbxBPDF8-Jpo5KGrbP_HCBWnqo9qrQ_x9lEdKQ7kIAIH0jcie216oULaaemw7BIizJ0A7Q/exec">Timbulan Sampah TPS3R</a>
+  <a href="https://www.google.com/maps/d/viewer?mid=1lSyz4Zlpy-x0nC0d2U1EjHPVwMSt-8I&z=11">Peta Timbulan Sampah Liar</a>
+  <a href="https://drive.google.com/drive/folders/1uvP9mJCiNvl0Qj2uuyGKkGyRRRl1O0bp">Data Monev TPS3R 2026</a>
+</div>
+
+<!-- HERO -->
 <div class="hero">
   <h1>DATABASE PERSAMPAHAN</h1>
 </div>
 
-<!-- ================= CONTENT ================= -->
+<!-- CONTENT -->
 <div class="container">
   <div class="link-list">
 
     <div class="link-item">
-      <a href="https://docs.google.com/spreadsheets/d/16N8D9Z4Qvs1ZnWEHTv8yoAXVHeBzSeegMVC03CZi1lQ/edit?gid=1193846872#gid=1193846872">Data TPS3R Intervensi DPUTR Kab. Bandung</a>
+      <a href="https://docs.google.com/spreadsheets/d/16N8D9Z4Qvs1ZnWEHTv8yoAXVHeBzSeegMVC03CZi1lQ">Data TPS3R Intervensi</a>
     </div>
 
     <div class="link-item">
-      <a href="https://docs.google.com/spreadsheets/d/1JlFHbhPtUdPRPGHxhQ5utekggAuVFvU1pvFaLkYvXzM/edit?gid=0#gid=0">Database TPS3R dan Dapur SPPG</a>
+      <a href="https://docs.google.com/spreadsheets/d/1JlFHbhPtUdPRPGHxhQ5utekggAuVFvU1pvFaLkYvXzM">Database TPS3R dan Dapur SPPG</a>
     </div>
 
     <div class="link-item">
-      <a href="https://docs.google.com/spreadsheets/d/1jAhJv-8oqDUGHd0-vPsET54za-NHkm_YVRyL6pRsJtw/edit?gid=981895662#gid=981895662">Data Timbulan Sampah Liar</a>
+      <a href="https://docs.google.com/spreadsheets/d/1jAhJv-8oqDUGHd0-vPsET54za-NHkm_YVRyL6pRsJtw">Data Timbulan Sampah Liar</a>
     </div>
 
     <div class="link-item">
-      <a href="https://drive.google.com/drive/folders/15XRnsoYgJuddKrm2aYfYdr4K3zgwr7XT">Dokumentasi TPS3R dan Dapur SPPG</a>
+      <a href="https://drive.google.com/drive/folders/15XRnsoYgJuddKrm2aYfYdr4K3zgwr7XT">Dokumentasi TPS3R</a>
     </div>
 
   </div>
 </div>
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 <div class="footer">
-  © 2026 Dinas Pekerjaan Umum dan Tata Ruang • Sistem Informasi Persampahan
+  © 2026 Dinas Pekerjaan Umum dan Tata Ruang
 </div>
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
 
 </body>
 </html>
