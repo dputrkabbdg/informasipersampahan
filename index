@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Informasi Persampahan</title>
+
+<style>
+:root{
+  --main:#1F6366;
+  --main-dark:#164b4d;
+  --bg:#f4f8f8;
+  --text:#173b3d;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+  background:white;
+  padding:12px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.nav-left{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:38px;
+  height:38px;
+  background:var(--main);
+  border-radius:8px;
+}
+
+.title{
+  font-weight:700;
+  font-size:18px;
+}
+
+.nav-menu{
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+
+.nav-menu a{
+  text-decoration:none;
+  color:var(--text);
+  font-size:14px;
+  font-weight:600;
+  transition:0.2s;
+}
+
+.nav-menu a:hover{
+  color:var(--main);
+}
+
+/* dropdown */
+.dropdown{
+  position:relative;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:white;
+  top:30px;
+  right:0;
+  min-width:220px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.dropdown-content a{
+  display:block;
+  padding:10px 14px;
+  font-size:13px;
+  border-bottom:1px solid #eee;
+}
+
+.dropdown-content a:hover{
+  background:#f2f7f7;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+/* ================= HERO ================= */
+.hero{
+  text-align:center;
+  padding:60px 20px 40px;
+}
+
+.hero h1{
+  font-size:42px;
+  letter-spacing:2px;
+  font-weight:300;
+}
+
+/* ================= CONTENT ================= */
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:20px;
+}
+
+.link-list{
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+}
+
+.link-item{
+  background:white;
+  padding:18px 22px;
+  border-radius:14px;
+  box-shadow:0 6px 20px rgba(31,99,102,0.08);
+  border-left:6px solid var(--main);
+  transition:0.25s;
+}
+
+.link-item a{
+  text-decoration:none;
+  font-size:16px;
+  color:var(--main);
+  font-weight:600;
+}
+
+.link-item:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 30px rgba(31,99,102,0.15);
+}
+
+/* ================= FOOTER ================= */
+.footer{
+  margin-top:60px;
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+  color:#777;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+  .nav-menu{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<div class="navbar">
+  <div class="nav-left">
+    <div class="logo"></div>
+    <div class="title">Informasi Persampahan</div>
+  </div>
+
+  <div class="nav-menu">
+    <a href="#">Beranda</a>
+    <a href="https://script.google.com/macros/s/AKfycby-jMq9B_mAzvEOhrzGEQ98O5-P8Icl86QvEA_QTHhqTJTu5CzOCzyYeg-X5bJNe_4KbQ/exec">Peta TPS3R Kabupaten Bandung</a>
+    <a href="https://script.google.com/macros/s/AKfycbyde-lwgOexdxuInwWAR5QDsZ5zVA3kAFSRkfwnmcFGrhaVLFWIJCeeDAMsIBNj4mxGBA/exec">Berita</a>
+    <a href="https://script.google.com/macros/s/AKfycbxYuyJpfPM418SdBJL2ontbRrC9O1iCLwSiM6TzXultiM04JdVLZZa2_fRdw9GkTN1T/exec">TPS3R DPUTR</a>
+    <a href="https://script.google.com/macros/s/AKfycbwEZq-VqtU8QD2WXcvXpqjlrQQi-eARyP-EWBC5udzhUME_iF5w9k5mBiCs7httBNF4/exec">PETA TPS3R DAN DAPUR SPPG</a>
+    <a href="https://script.google.com/macros/s/AKfycbxBPDF8-Jpo5KGrbP_HCBWnqo9qrQ_x9lEdKQ7kIAIH0jcie216oULaaemw7BIizJ0A7Q/exec">Timbulan Sampah TPS3R</a>
+    <a href="https://www.google.com/maps/d/viewer?mid=1lSyz4Zlpy-x0nC0d2U1EjHPVwMSt-8I&femb=1&ll=-7.06853470578671%2C107.59290800000001&z=11">Peta Timbulan Sampah Liar</a>
+    <a href="https://drive.google.com/drive/folders/1uvP9mJCiNvl0Qj2uuyGKkGyRRRl1O0bp?usp=drive_link">Data Monev TPS3R 2026</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <h1>DATABASE PERSAMPAHAN</h1>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<div class="container">
+  <div class="link-list">
+
+    <div class="link-item">
+      <a href="https://docs.google.com/spreadsheets/d/16N8D9Z4Qvs1ZnWEHTv8yoAXVHeBzSeegMVC03CZi1lQ/edit?gid=1193846872#gid=1193846872">Data TPS3R Intervensi DPUTR Kab. Bandung</a>
+    </div>
+
+    <div class="link-item">
+      <a href="https://docs.google.com/spreadsheets/d/1JlFHbhPtUdPRPGHxhQ5utekggAuVFvU1pvFaLkYvXzM/edit?gid=0#gid=0">Database TPS3R dan Dapur SPPG</a>
+    </div>
+
+    <div class="link-item">
+      <a href="https://docs.google.com/spreadsheets/d/1jAhJv-8oqDUGHd0-vPsET54za-NHkm_YVRyL6pRsJtw/edit?gid=981895662#gid=981895662">Data Timbulan Sampah Liar</a>
+    </div>
+
+    <div class="link-item">
+      <a href="https://drive.google.com/drive/folders/15XRnsoYgJuddKrm2aYfYdr4K3zgwr7XT">Dokumentasi TPS3R dan Dapur SPPG</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div class="footer">
+  © 2026 Dinas Pekerjaan Umum dan Tata Ruang • Sistem Informasi Persampahan
+</div>
+
+</body>
+</html>
